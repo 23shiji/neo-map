@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3c9e6152995ae87a56f33f8a88a9f2aa.js"
+  "/neo-map/precache-manifest.e6d8a7e127c81489736c9d46a5b4a9f9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "neo-map"});
