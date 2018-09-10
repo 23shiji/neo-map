@@ -16,12 +16,9 @@ deploy:
   local-dir: ./dist
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: false
+  keep-history: true
   on:
-    repo: 23shiji/election-2218-q3
-    branches: 
-      only:
-        - gh-pages
+    - gh-pages
 notifications:
   email:
     - atsunaakiya@outlook.com
