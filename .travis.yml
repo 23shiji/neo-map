@@ -18,7 +18,10 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: false
   on:
-    branch: gh-pages
+    repo: 23shiji/election-2218-q3
+    branches: 
+      only:
+        - gh-pages
 notifications:
   email:
     - atsunaakiya@outlook.com
