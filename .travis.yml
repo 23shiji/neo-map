@@ -7,7 +7,7 @@ cache:
   directories:
     - "node_modules"
 install:
-  - sudo yarn global add @vue/cli
+  - yarn global add @vue/cli
   - yarn install
   - yarn build
 deploy:
