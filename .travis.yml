@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - 8
+before_script:
+  - yarn install
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+install:
+  - yarn build
+deploy:
+  provider: pages
+  local-dir: ./dist
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: false
+  on:
+    branch: gh-pages
+notifications:
+  email:
+    - atsunaakiya@outlook.com
+    - 2357321824@qq.com
